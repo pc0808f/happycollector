@@ -1,4 +1,4 @@
-VERSION = "V1.07b"
+VERSION = "V1.08a"
 
 import machine
 import binascii
@@ -14,10 +14,9 @@ import gc
 from machine import WDT
 import os
 
-#Based on 2023/12/25_V1.07a, Sam 
-# 2024/02/22_V1.07b, Thomas 
-#  1. main.py新增開機時，如果ESP32_TXD2_FEILOLI(IO17)讀到Low，會進去UDP_Load_Wifi
-#  2. 進入UDP_Load_Wifi時，LCD會顯示等待UDP的Wifi，讓操作者知道有進入該Mode
+# 2025/06/04_V1.08a, Thomas
+#  1. 新增ntptime.py：解決開機時，main有機率拿不到NTP時間的問題
+# Based on 2024/02/22_V1.07b, Thomas
 
 # 定義狀態類型
 class MainStatus:

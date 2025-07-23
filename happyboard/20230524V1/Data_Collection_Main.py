@@ -1,4 +1,4 @@
-VERSION = "V1.08a"
+VERSION = "V1.08b"
 
 import machine
 import binascii
@@ -14,9 +14,9 @@ import gc
 from machine import WDT
 import os
 
-# 2025/06/04_V1.08a, Thomas
-#  1. 新增ntptime.py：解決開機時，main有機率拿不到NTP時間的問題
-# Based on 2024/02/22_V1.07b, Thomas
+# 2025/07/23_V1.08b, Thomas
+#  1. 更新senko.py：放上Sam新寫的senko.py，時間緊急他掛保證不用測試
+# Based on 2025/06/04_V1.08a, Thomas
 
 # 定義狀態類型
 class MainStatus:
